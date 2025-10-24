@@ -12,13 +12,14 @@ pip install jsonschemaextractor
 
 ```python
 from jsonschema.validators import Draft7Validator
+from jsonschemaextractor import Extractor
 
 schema = {
-     "type": "object",
-     "properties": {
-         "name": {"type": "string", "extract_to": "name"}
-     }
- }
+    "type": "object",
+    "properties": {
+        "name": {"type": "string", "extract_to": "name"}
+    }
+}
 
 validator = Draft7Validator(schema=schema)
 extractor = Extractor(validator=validator)  # noqa
