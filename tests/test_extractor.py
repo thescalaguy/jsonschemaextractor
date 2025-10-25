@@ -1,6 +1,6 @@
 from jsonschema.validators import Draft7Validator
 
-from schemaextractor import Extractor
+from jsonvalidatingschemaextractor import Extractor
 
 
 def test_valid_json_object(schema):
