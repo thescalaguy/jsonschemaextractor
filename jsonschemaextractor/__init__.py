@@ -14,19 +14,19 @@ class Extractor:
     >>> schema = {
     ...     "type": "object",
     ...     "properties": {
-    ...         "name": {"type": "string", "extract_to": "name"}
+    ...         "name": {"type": "string", "extract_to": "username"}
     ...     }
     ... }
     >>> validator = Draft7Validator(schema=schema)
     >>> extractor = Extractor(validator=validator)  # noqa
-    >>> result = extractor.validate({"name": "John Doe"})
-    >>> assert result.extracted_values == {"name": "John Doe"}
+    >>> result = extractor.validate_and_extract({"name": "John Doe"})
+    >>> assert result.extracted_values == {"username": "John Doe"}
     """
 
     def __init__(self, validator: Validator):
         self.validator = validator
 
-    def validate(self, instance):
+    def validate_and_extract(self, instance):
         extracted_values = {}
 
         self.validator.VALIDATORS.update(

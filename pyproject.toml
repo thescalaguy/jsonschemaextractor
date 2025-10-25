@@ -1,7 +1,7 @@
 [project]
 name = "jsonschemaextractor"
 version = "0.1.0"
-description = ""
+description = "Validate and extract values from JSON objects using JSON schema."
 authors = [
     {name = "Fasih Khatib",email = "hellofasih.confound928@passinbox.com"}
 ]
