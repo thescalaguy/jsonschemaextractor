@@ -1,4 +1,4 @@
-# jsonschemaextractor  
+# jsonschemaextractor
 
 An extension to JSON schema allowing extracting values from objects declaratively by specifying them in the schema.
 
@@ -10,8 +10,8 @@ pip install jsonschemaextractor
 
 ## Usage
 
-To extract a value from a JSON object into a field, specify an `extract_to` property in the JSON schema which contains the name 
-with which the value should be extracted into the resulting dictionary.  
+To extract a value from a JSON object into a field, specify an `extract_to` property in the JSON schema which contains the name
+with which the value should be extracted into the resulting dictionary.
 
 In the example below, we extract the `name` field in the JSON to a `username` field in the dictionary.
 
