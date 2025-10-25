@@ -5,7 +5,7 @@ An extension to JSON schema allowing extracting values from objects declarativel
 ## Installation
 
 ```shell
-pip install jsonschemaextractor
+pip install schemaextractor
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ In the example below, we extract the `name` field in the JSON to a `username` fi
 
 ```python
 from jsonschema.validators import Draft7Validator
-from jsonschemaextractor import Extractor
+from schemaextractor import Extractor
 
 schema = {
     "type": "object",
